@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Створення опитування - Vladyslav Plakhotniuk</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Створення опитування - Vladyslav Plakhotniuk</h1>
+    <form id="surveyForm">
+        <label for="title">Назва опитування:</label>
+        <input type="text" id="title" required><br><br>
+
+        <label for="description">Опис опитування:</label>
+        <textarea id="description" required></textarea><br><br>
+
+        <label>Варіанти відповідей:</label>
+        <div id="options">
+            <input type="text" class="option" placeholder="Варіант 1" required><br>
+            <input type="text" class="option" placeholder="Варіант 2" required><br>
+        </div>
+        <button type="button" onclick="addOption()">Додати варіант</button><br><br>
+        <button type="button" onclick="createSurvey()">Створити опитування</button>
+    </form>
+    <p id="outputMessage"></p>
+    <script src="script.js"></script>
+</body>
+</html>
